@@ -13,7 +13,7 @@ readme = "README.md"
 license = {text = "not open"}
 
 [tool.pdm]
-distribution = false
+distribution = true
 
 [tool.pdm.dev-dependencies]
 dev = [
@@ -24,6 +24,7 @@ dev = [
     "mkdocs-material<9.0.0,>=8.5.11",
     "ruff>=0.4.3",
     "-e file:///${PROJECT_ROOT}/#egg=img-cache",
+    "twine>=5.0.0",
 ]
 
 [tool.pdm.build]

@@ -11,3 +11,7 @@ image cache 是一个用于防止图像多次识别的包。
 ## For developer
 
 Use logseq as documentation.
+
+## Usage
+
+Check the `tests/test_func.py`

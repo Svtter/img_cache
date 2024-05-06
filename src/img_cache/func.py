@@ -1,11 +1,12 @@
 import typing as t
+from . import types as T
 
 
 def cache_read(
     img,
-    read_func: t.Callable,
-    read_cache: t.Callable,
-    write_cache: t.Callable,
+    read_func: T.ReadFunc,
+    read_cache: T.ReadCache,
+    write_cache: T.WriteCache,
 ):
     """
     read_func: read img function

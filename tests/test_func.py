@@ -1,5 +1,5 @@
 import typing as t
-from img_cache.core import cache_read
+from img_cache.func import cache_read
 from img_cache.sample import memory_cache_func
 
 

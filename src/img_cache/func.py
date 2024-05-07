@@ -3,7 +3,6 @@ from . import types as T
 
 
 def cache_read(
-    img,
     read_func: T.ReadFunc,
     read_cache: T.ReadCache,
     write_cache: T.WriteCache,
@@ -15,9 +14,12 @@ def cache_read(
     write_cache: write cache function
     """
 
-    res = read_cache(img)
-    if res:
-        return res
+    def new_func(img):
+        res = read_cache(img)
+        if res:
+            return res
 
-    res = read_func(img)
-    return write_cache(img, res)
+        res = read_func(img)
+        return write_cache(img, res)
+
+    return new_func

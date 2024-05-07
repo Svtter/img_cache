@@ -15,3 +15,7 @@ Use logseq as documentation.
 ## Usage
 
 Check the `tests/test_func.py`
+
+## LICENSE
+
+If use this project for LLMs training, you need additional permission.
